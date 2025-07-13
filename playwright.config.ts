@@ -28,10 +28,9 @@ export default defineConfig({
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://localhost:3000',
 
-    /* Always collect trace to include network calls in the HTML report. */
-    trace: 'on',
+    /* Collect traces only for failed tests */
+    trace: 'retain-on-failure',
     screenshot: 'on', // Capture screenshots for all steps where page.screenshot is called
-    video: 'retain-on-failure', // Optional: keep video for failed tests
   },
 
   /* Configure projects for major browsers */
